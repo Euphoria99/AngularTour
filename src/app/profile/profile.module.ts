@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListProfileComponent } from './list-profile/list-profile.component';
-import { ListProfile2Component } from './list-profile2/list-profile2.component';
 
 @NgModule({
-  declarations: [ListProfileComponent, ListProfile2Component],
+  declarations: [ListProfileComponent],
   imports: [CommonModule],
-  exports: [ListProfileComponent, ListProfile2Component],
+  exports: [ListProfileComponent],
 })
 export class ProfileModule {}
