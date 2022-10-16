@@ -1,11 +1,15 @@
 <h1 class="c1">{{ title }}</h1>
 
-<div *ngIf="success_message; else error_msg" class="c2">
+<div *ngIf="success_message; then updated_msg; else error_msg" class="c2">
   User added successfully!!
 </div>
 
 <ng-template #error_msg>
   <label class="c2-one">user was not added </label>
+</ng-template>
+
+<ng-template #updated_msg>
+  <label class="c2-two">user was updated </label>
 </ng-template>
 
 <app-list-profile></app-list-profile>
