@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Simple CRM';
-  success_message = true;
+  success_message = false;
 }
