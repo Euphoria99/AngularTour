@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Simple CRM';
   success_message = true;
-
+  superPower = 'ironMan';
+  taxRate = 10;
   contacts = [
     {
       fname: 'one',

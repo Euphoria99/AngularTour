@@ -37,4 +37,17 @@
   </li>
 </ul>
 
+<div [ngSwitch]="superPower">
+  <div *ngSwitchCase="'wonderWoman'">Display wonder women's super powers</div>
+  <div *ngSwitchCase="'spiderMan'">Display spiderman's super powers</div>
+  <div *ngSwitchCase="'thor'">Display thor's super powers</div>
+  <div *ngSwitchCase="'ironMan'">Display iron man's super powers</div>
+  <div *ngSwitchDefault>No Super heroes right now</div>
+</div>
+
+<div [ngSwitch]="taxRate">
+  <div *ngSwitchCase="10">Taxrate is 10%</div>
+  <div *ngSwitchDefault>Taxrate is 5% as prescribed standard.</div>
+</div>
+
 <app-list-profile></app-list-profile>
