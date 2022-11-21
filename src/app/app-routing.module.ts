@@ -9,8 +9,16 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   {
     path: 'customers',
-    component: CustomersComponent,
-    children: [{ path: 'add', component: AddCustomersComponent }],
+    children: [
+      {
+        path: '',
+        component: CustomersComponent,
+      },
+      {
+        path: 'add',
+        component: AddCustomersComponent,
+      },
+    ],
   },
   // { path: 'addcustomers', component: AddCustomersComponent },
 ];
