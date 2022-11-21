@@ -7,6 +7,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./customers.component.css'],
 })
 export class CustomersComponent implements OnInit {
+  name: string = '';
   email: string = '';
   password: string = '';
   check: boolean = false;
