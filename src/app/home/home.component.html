@@ -50,4 +50,17 @@
   <div *ngSwitchDefault>Taxrate is 5% as prescribed standard.</div>
 </div>
 
+<h3>Learning ngStyle</h3>
+
+<div [ngStyle]="{ 'background-color': 'yellow', color: 'brown' }">
+  Yellow div
+</div>
+<div [ngStyle]="{ 'background-color': ourColor }">
+  This is dynamic use case of ngstyle
+</div>
+
+<div [ngStyle]="{ 'background-color': txtColor == 'blue' ? 'blue' : 'green' }">
+  ngStyle use case with Conditional operator
+</div>
+
 <app-list-profile></app-list-profile>

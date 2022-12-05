@@ -14,6 +14,9 @@ export class HomeComponent implements OnInit {
   success_message = true;
   superPower = 'ironMan';
   taxRate = 10;
+  ourColor = 'purple';
+  txtColor = 'red';
+
   contacts = [
     {
       fname: 'one',
