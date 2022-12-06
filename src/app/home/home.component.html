@@ -81,4 +81,50 @@
 
 <div [ngClass]="ourMethod()">This is an example for ngClass using methods</div>
 
+<br />
+
+<div [ngStyle]="{ color: 'orange' }">Interpolation Examples</div>
+
+<br />
+
+<div>{{ pageTitle }}</div>
+<br />
+
+<div>{{ pageCount }}</div>
+<br />
+
+<div>{{ userObject.firstName }} {{ userObject.lastName }}</div>
+<br />
+
+<div *ngIf="isUserLoggedIn">
+  <p>This is an example of Interpolation with ngIf</p>
+  <div>{{ userObject.firstName }} {{ userObject.lastName }}</div>
+</div>
+
+<br />
+
+<p>This is an example of Interpolation with ngFor</p>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </tr>
+  <tr *ngFor="let contact of contacts">
+    <td>{{ contact.cid }}</td>
+    <td>{{ contact.fname }}</td>
+    <td>{{ contact.lname }}</td>
+  </tr>
+</table>
+
+<div [ngSwitch]="superPower">
+  <p>This is an example of Interpolation with ngSwitch</p>
+  <p *ngSwitchCase="'ironMan'">
+    {{ userObject.firstName }}
+  </p>
+  <p *ngSwitchCase="'wonderWoman'">
+    {{ userObject.lastName }}
+  </p>
+</div>
+
 <app-list-profile></app-list-profile>
