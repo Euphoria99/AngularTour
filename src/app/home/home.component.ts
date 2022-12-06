@@ -16,7 +16,12 @@ export class HomeComponent implements OnInit {
   taxRate = 10;
   ourColor = 'purple';
   txtColor = 'red';
+  styleProsU = 'c3';
+  conditionClsProp = 'c4';
 
+  ourMethod() {
+    return 'c2';
+  }
   contacts = [
     {
       fname: 'one',

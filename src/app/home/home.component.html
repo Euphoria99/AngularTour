@@ -63,4 +63,22 @@
   ngStyle use case with Conditional operator
 </div>
 
+<br />
+<div [ngClass]="'c1'">This is an example for ngClass</div>
+
+<div [ngClass]="'c1 c2'">
+  This is an example for ngClass with multiple classes
+</div>
+<div [ngClass]="styleProsU">
+  This is an example for ngClass with variable as reference
+</div>
+<div [ngClass]="conditionClsProp === 'c4' ? 'c4' : 'c2-green'">
+  This is an example for ngClass with conditionals
+</div>
+<div [ngClass]="{ c4: false, c1: true }">
+  This is an example for ngClass with objects
+</div>
+
+<div [ngClass]="ourMethod()">This is an example for ngClass using methods</div>
+
 <app-list-profile></app-list-profile>

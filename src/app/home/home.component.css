@@ -6,6 +6,15 @@
 .c2 {
   background-color: aqua;
   color: #fff;
+  font-size: 25px;
+}
+
+.c3 {
+  background-color: rgb(233, 159, 22);
+}
+.c4 {
+  background-color: rgb(191, 22, 233);
+  color: #fff;
 }
 
 .c2-one {
