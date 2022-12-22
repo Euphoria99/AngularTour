@@ -19,6 +19,10 @@ export class HomeComponent implements OnInit {
   styleProsU = 'c3';
   conditionClsProp = 'c4';
 
+  imageUrl = '';
+  imgAlt = 'no-image';
+  color = 'orange';
+
   //just being specific with types
   pageTitle: string = 'interpolation works';
   pageCount: number = 9;
